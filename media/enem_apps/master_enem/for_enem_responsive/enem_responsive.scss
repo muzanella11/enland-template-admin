@@ -1,0 +1,193 @@
+/** Phone Screen **/
+@media screen and (min-width:$enem_screen_phone) {
+    
+}
+
+@media screen and (min-width: 620px) {
+    
+}
+
+/** Tablet Screen **/
+@media screen and (min-width:$enem_screen_tablet) {
+    
+}
+
+/** Medium Screen **/
+@media screen and (min-width:$enem_screen_medium) {
+    
+}
+
+/** Large Screen **/
+@media screen and (min-width:$enem_screen_large) {
+	
+}
+
+@media screen and (min-width:1250px) {
+    
+}
+
+@media screen and (max-width: 1250px) {
+    
+}
+@media screen and (max-width: $enem_screen_md_max) {
+	.#{$enem_prefix} {
+		&.top-menu {
+			&.nav-right {
+				&.mobile {
+					display: block;
+				}
+				&.desktop {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+/** Max Medium Screen **/
+@media screen and (max-width: $enem_screen_sm_max) {
+    
+}
+
+@media screen and (max-width: 800px) {
+    /** New Responsive **/
+    
+    /************************************/
+}
+
+/** Max Phone Screen **/
+@media screen and (max-width: $enem_screen_xs_max) {
+    /** For Content News **/
+    
+    /*********************************************/
+}
+
+@media screen and (max-width: 620px) {
+    
+}
+
+@media screen and (max-width:600px) {
+    
+}
+
+@media screen and (max-width:500px) {
+    /** New Responsive **/
+    
+    /**********************************/
+    
+}
+
+@media screen and (max-width:480px) {
+    
+}
+
+@media screen and (max-width: 450px) {
+    
+}
+
+@media screen and (max-width: 400px) {
+    /** New Responsive **/
+    
+    /*********************************************/
+}
+
+@media screen and (max-width: 320px) {
+    
+}
+
+/** Responsive By Ratio **/
+//@media screen and (max-aspect-ratio: 16/9) {
+//    body {
+//        background: tomato !important;
+//    }
+//}
+//@media screen and (max-aspect-ratio: 5/3) {
+//    body {
+//        background: yellow !important;
+//    }
+//}
+//@media screen and (max-aspect-ratio: 4/3) {
+//    body {
+//        background: red !important;
+//    }
+//}
+/**********************************/
+
+/** Responsive By Height **/
+@media screen and (min-height: 600px) {
+	.#{$enem_prefix} {
+		&.container-nav-side {
+			height: 42%;
+			& .container-navigation-side {
+				padding-bottom: 25%;
+			}
+		}
+	}
+}
+@media screen and (min-height: 700px) {
+	.#{$enem_prefix} {
+		&.container-nav-side {
+			height: 51%;
+			& .container-navigation-side {
+				padding-bottom: 25%;
+			}
+		}
+	}
+}
+@media screen and (min-height: 800px) {
+	.#{$enem_prefix} {
+		&.container-nav-side {
+			height: 58%;
+			& .container-navigation-side {
+				padding-bottom: 27%;
+			}
+		}
+	}
+}
+@media screen and (min-height: 900px) {
+	.#{$enem_prefix} {
+		&.container-nav-side {
+			height: 63%;
+			& .container-navigation-side {
+				padding-bottom: 23%;
+			}
+		}
+	}
+}
+@media screen and (min-height: 1024px) {
+    
+}
+@media screen and (min-height: 1000px) {
+	.#{$enem_prefix} {
+		&.container-nav-side {
+			height: 67%;
+			& .container-navigation-side {
+				padding-bottom: 27%;
+			}
+		}
+	}
+}
+@media screen and (min-height: 1100px) {
+	.#{$enem_prefix} {
+		&.container-nav-side {
+			height: 70%;
+			& .container-navigation-side {
+				padding-bottom: 27%;
+			}
+		}
+	}
+}
+@media screen and (min-height: 1200px) {
+	.#{$enem_prefix} {
+		&.container-nav-side {
+			height: 72%;
+			& .container-navigation-side {
+				padding-bottom: 29%;
+			}
+		}
+	}
+}
+/**********************************/
+
+
+

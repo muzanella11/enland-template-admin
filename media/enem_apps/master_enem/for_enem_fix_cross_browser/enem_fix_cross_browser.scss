@@ -1,0 +1,6 @@
+/** Fix slider other video **/
+.#{$enem_prefix}box_other_video .swiper-wrapper .swiper-slide figure {
+    position: relative;
+    width: 100%;
+}
+/******************************/

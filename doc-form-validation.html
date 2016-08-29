@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <title>Form Validation</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="media/css/app.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-clockpicker.css" />
+   
+</head>
+<body class="enem page-body scroll">
+    <header>
+        <nav class="enem navbar fixed-top">
+            <!-- Begin Navbar -->
+            <div class="enem navbar navbar-default">
+                <div class="enem navbar navbar-content left">
+                    <div class="enem burger box-burger">
+                        <button class="enem burger burger-btn btn active" data-enem="powerMenu" data-menu="hidden">
+                            <div class="enem burger icon-burger"></div>
+                        </button>
+                    </div>
+                    <div class="enem logo box-logo">
+                        <a class="enem logo title-logo" href="javascript:;">
+                            Name Project
+                        </a>
+                    </div>
+                </div>
+                <div class="enem navbar navbar-content right">
+                    <!-- Begin List Content Right Desktop -->
+                    <ul class="enem top-menu nav-right desktop">
+                        <li>
+                            <ul class="enem list-notification">
+                                <li>
+                                    <a class="enem en-search" href="javascript:;" data-enem="powerSearch">
+                                        <i class="enem box-icon-search fa fa-search"></i>
+                                    </a>
+                                </li>
+                                <li class="hidden-md">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-envelope"></i>
+                                        <span class="enem badge badge-notification-top">11</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-md">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-bell"></i>
+                                        <span class="enem badge badge-notification-top">11</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-md">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-tasks"></i>
+                                        <span class="enem badge badge-notification-top">11</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="enem btn btn-account waves" data-enem="powerDropdown" data-dd-id="topAccount">
+                                <img class="enem box-avatar" src="media/img/design_f.png" width="30px" height="30px" /> Alexander Great Rose
+                            </button>
+                            <ul class="enem top-account box-account" data-dd-name="topAccount">
+                                <li>
+                                    <a class="enem waves" href="javascript:;">
+                                        <i class="fa fa-user"></i>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="enem waves" href="javascript:;">
+                                        <i class="fa fa-unlock"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- End List Content Right -->
+
+                    <!-- Begin List Content Right Desktop -->
+                    <ul class="enem top-menu nav-right mobile">
+                        <li>
+                            <a class="enem en-search" href="javascript:;" data-enem="powerSearch">
+                                <i class="enem box-icon-search fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End List Content Right -->
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- End Navbar -->
+
+            <!-- Enem Power Alert -->
+            <div class="enem container-alert power-alert" data-enem-power="powerAlert">
+                <div class="enem alert alert-danger power-alert message-box">
+                    Danger
+                </div>
+            </div>
+            <!-- End Enem Power Alert -->
+
+            <!-- Enem Power Search -->
+            <div class="enem container-search power-search" data-enem-search="powerSearch">
+                <input class="enem power-search box-search" placeholder="S e a r c h" />
+            </div>
+            <!-- End Enem Power Search -->
+        </nav>
+    </header>
+    <aside class="enem aside sidebar left">
+        <div class="enem container-profile-side">
+            <div class="enem container-profile-side avatar" style="background:url('media/img/design_f.png') center center no-repeat; background-size:cover;">
+                <div class="enem container-profile-side box-desc">
+                    <a class="enem box-desc link" href="javascript:;">
+                        <span class="enem box-desc name">
+                            Alexander Great Rose
+                        </span>
+                        <span class="enem box-desc other">
+                            11278393777
+                        </span>
+                        <!-- <a class="enem box-desc see-profile" href="javascript:;">
+                            <i class="fa fa-eye"></i>
+                        </a> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="enem container-notification-side hidden-lg">
+            <ul class="enem notification notification-side">
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="bottom" title="Message" href="javascript:;">
+                        <i class="fa fa-envelope"></i>
+                        <span class="enem badge badge-notification">11</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="bottom" title="Notification" href="javascript:;">
+                        <i class="fa fa-bell"></i>
+                        <span class="enem badge badge-notification">11</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="bottom" title="Tasks" href="javascript:;">
+                        <i class="fa fa-tasks"></i>
+                        <span class="enem badge badge-notification">11</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Begin Nav Sidebar -->
+        <div class="enem container-nav-side">
+            <nav class="enem container-navigation-side scroll">
+                <ul class="enem navigation navigation-side">
+                    <li>
+                        <a class="enem waves" href="dashboard.html">
+                            <i class="enem icon icon-menu fa fa-dashboard"></i> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-book"></i> UI Element
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="alert.html">
+                                    <i class="enem icon icon-menu "></i>Alert
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="badge-label.html">
+                                    <i class="enem icon icon-menu "></i>Badge and Label
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="modal.html">
+                                    <i class="enem icon icon-menu"></i>Modal
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="navbar.html">
+                                    <i class="enem icon icon-menu"></i>Navbar
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="tooltip.html">
+                                    <i class="enem icon icon-menu"></i>Tooltip
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="form.html">
+                                    <i class="enem icon icon-menu"></i>Form
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="table.html">
+                                    <i class="enem icon icon-menu"></i>Table
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-file"></i> Forms
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="form-wizard.html">
+                                    <i class="enem icon icon-menu "></i>Form Wizard
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="form-validation.html">
+                                    <i class="enem icon icon-menu "></i>Form Validation
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-file"></i> Library
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="sortable.html">
+                                    <i class="enem icon icon-menu "></i>Sortable
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="dragable.html">
+                                    <i class="enem icon icon-menu "></i>Dragable
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-file"></i> Sample Pages
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="login-form.html">
+                                    <i class="enem icon icon-menu "></i>Login
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="register.html">
+                                    <i class="enem icon icon-menu "></i>Register
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="error-pages.html">
+                                    <i class="enem icon icon-menu "></i>Error Pages
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="inbox.html">
+                            <i class="enem icon icon-menu fa fa-table"></i> Messages
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- For Sub Menu -->
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-table"></i> Sub Menu
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                                    <i class="enem icon icon-menu fa fa-table"></i> sub 1.1
+                                    <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                                </a>
+
+                                <ul class="enem sub-nav sub-sub-navigation">
+                                    <li>
+                                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                                            <i class="enem icon icon-menu fa fa-table"></i> sub 1.2
+                                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                                        </a>
+
+                                        <ul class="enem sub-nav sub-sub-sub-navigation">
+                                            <li>
+                                                <a class="enem waves" href="javascript:;">
+                                                    <i class="enem icon icon-menu fa fa-table"></i> sub 1.3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="enem waves" href="javascript:;">
+                                                    <i class="enem icon icon-menu fa fa-table"></i> sub 2.3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="enem waves" href="javascript:;">
+                                                    <i class="enem icon icon-menu fa fa-table"></i> sub 3.3
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="enem waves" href="javascript:;">
+                                            <i class="enem icon icon-menu fa fa-table"></i> sub 2.2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="enem waves" href="javascript:;">
+                                            <i class="enem icon icon-menu fa fa-table"></i> sub 3.2
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a class="enem waves" href="javascript:;">
+                                    sub 2.1
+                                </a>
+                            </li>
+                            <li>
+                                <a class="enem waves" href="javascript:;">
+                                    sub 3.1
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Sub Menu -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End Nav Sidebar -->
+
+        <!-- Begin Notification side Bottom -->
+        <div class="enem container-notification-bs">
+            <ul class="enem notification notification-side">
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="top" title="Setting" href="javascript:;">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="top" title="Bookmark" href="javascript:;">
+                        <i class="fa fa-bookmark"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="top" title="Logout" href="javascript:;">
+                        <i class="fa fa-unlock"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Notification side Bottom -->
+
+    </aside>
+    <section class="enem page-container">
+
+        <!-- Begin Content -->
+        <section class="enem container-content">
+            <div class="enem row bg-title">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Dashboard</h4>
+                </div>
+                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Form</a></li>
+                        <li><a href="#">Form Validation</a></li>
+                    </ul>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+
+            
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="enem panel panel-wrapper">
+                <div class="enem panel-heading">
+                  <div class="wrapper-breadcumb-panel">
+                    <ul class="enem panel-tools">
+                        <li>
+                            <a class="btn btn-outline btn-primary btn-circle-sm" href="javascript:;" data-enem="powerPanel" data-enem-panel="collapse">
+                                <i class="fa fa-minus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-outline btn-info btn-circle-sm" href="javascript:;">
+                                <i class="fa fa-refresh"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-outline btn-danger btn-circle-sm" href="javascript:;" data-enem="powerPanel" data-enem-panel="closePanel">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                  </div>
+                  <h3>Form Validation</h3>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="enem panel-main-content">
+                <form id="loginForm">
+                    <div class="enem panel-body">
+                      <div class="form-group">
+                        <label for="inputName1" class="control-label">Name</label>
+                        <input class="form-control" id="inputName1" placeholder="Name" type="text" name="name" >
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail" class="control-label">Email</label>
+                        <input class="form-control" id="inputEmail" placeholder="Email" type="email" name="email">
+                      </div>
+                      <div class="form-group">
+                        <label for="textarea" class="control-label">Text area</label>
+                        <textarea id="textarea" class="form-control" name="message"></textarea>
+                        <span class="help-block"></span>
+                        </div>
+                      <div class="form-group">
+                        <label for="inputPassword" class="control-label">Password</label>
+                        
+                          <div class="form-group">
+                            <input data-toggle="validator" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required="" type="password" name="password">
+                            </div>
+                          <div class="form-group">
+                            <input class="form-control" id="inputPasswordConfirm" name="password_confirm"  placeholder="Confirm Password" type="password">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <fieldset class="form-group">
+                        <div class="radio">
+                            <label for="out"> 
+                            <input name="underwear[]" id="out"  type="radio">
+                             Boxers </label>
+                        </div>
+                        <div class="radio">
+                            <label for="in">
+                            <input name="underwear[]" id="in"  type="radio">
+                            Briefs </label>
+                        </div>
+                      </fieldset>
+                    </div><!--panel-body-->
+                    <div class="panel-footer">
+                      <div class="form-group">
+                        <div class="checkbox">
+                            <label for="terms"> 
+                              <input id="terms" name="terms" type="checkbox">
+                              Check yourself </label>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </div><!--panel-footer-->
+                </form>
+                </div><!--/panel-main-content END-->
+              </div><!--/.panel-wrapper-->
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="enem panel panel-wrapper">
+                <div class="enem panel-heading">
+                  <div class="wrapper-breadcumb-panel">
+                    <ul class="enem panel-tools">
+                        <li>
+                            <a class="btn btn-outline btn-primary btn-circle-sm" href="javascript:;" data-enem="powerPanel" data-enem-panel="collapse">
+                                <i class="fa fa-minus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-outline btn-info btn-circle-sm" href="javascript:;">
+                                <i class="fa fa-refresh"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-outline btn-danger btn-circle-sm" href="javascript:;" data-enem="powerPanel" data-enem-panel="closePanel">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                  </div>
+                  <h3>Documentation</h3>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="enem panel-main-content">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#html" data-toggle="tab">Html</a></li>
+                    <li><a href="#js" data-toggle="tab">JS</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="html">
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>form</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"loginForm"</span><span style='color:#ff8906; '>></span>
+    <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"enem panel-body"</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-group"</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>label</span> for<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"inputName1"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"control-label"</span><span style='color:#ff8906; '>></span>Name<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>label</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>input</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-control"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"inputName1"</span> placeholder<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"Name"</span> type<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"text"</span> name<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"name"</span> <span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-group"</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>label</span> for<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"inputEmail"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"control-label"</span><span style='color:#ff8906; '>></span>Email<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>label</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>input</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-control"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"inputEmail"</span> placeholder<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"Email"</span> type<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"email"</span> name<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"email"</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-group"</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>label</span> for<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"textarea"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"control-label"</span><span style='color:#ff8906; '>></span>Text area<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>label</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>textarea</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"textarea"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-control"</span> name<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"message"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>textarea</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>span</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"help-block"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>span</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-group"</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>label</span> for<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"inputPassword"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"control-label"</span><span style='color:#ff8906; '>></span>Password<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>label</span><span style='color:#ff8906; '>></span>
+        
+          <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-group"</span><span style='color:#ff8906; '>></span>
+            <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>input</span> data-toggle<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"validator"</span> data-minlength<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"6"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-control"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"inputPassword"</span> placeholder<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"Password"</span> required<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>""</span> type<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"password"</span> name<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"password"</span><span style='color:#ff8906; '>></span>
+            <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+          <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-group"</span><span style='color:#ff8906; '>></span>
+            <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>input</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-control"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"inputPasswordConfirm"</span> name<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"password_confirm"</span>  placeholder<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"Confirm Password"</span> type<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"password"</span><span style='color:#ff8906; '>></span>
+            <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"help-block with-errors"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+          <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>fieldset</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-group"</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"radio"</span><span style='color:#ff8906; '>></span>
+            <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>label</span> for<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"out"</span><span style='color:#ff8906; '>></span> 
+            <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>input</span> name<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"underwear[]"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"out"</span>  type<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"radio"</span><span style='color:#ff8906; '>></span>
+             Boxers <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>label</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"radio"</span><span style='color:#ff8906; '>></span>
+            <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>label</span> for<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"in"</span><span style='color:#ff8906; '>></span>
+            <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>input</span> name<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"underwear[]"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"in"</span>  type<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"radio"</span><span style='color:#ff8906; '>></span>
+            Briefs <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>label</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>fieldset</span><span style='color:#ff8906; '>></span>
+    <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span><span style='color:#9999a9; '>&lt;!--panel-body--></span>
+    <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"panel-footer"</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-group"</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"checkbox"</span><span style='color:#ff8906; '>></span>
+            <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>label</span> for<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"terms"</span><span style='color:#ff8906; '>></span> 
+              <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>input</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"terms"</span> name<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"terms"</span> type<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"checkbox"</span><span style='color:#ff8906; '>></span>
+              Check yourself <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>label</span><span style='color:#ff8906; '>></span>
+          <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"help-block with-errors"</span><span style='color:#ff8906; '>></span><span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"form-group"</span><span style='color:#ff8906; '>></span>
+        <span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"submit"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"btn btn-primary"</span><span style='color:#ff8906; '>></span>Submit<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+      <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span>
+    <span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#ff8906; '>></span><span style='color:#9999a9; '>&lt;!--panel-footer--></span>
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>form</span><span style='color:#ff8906; '>></span>
+</pre>
+                    </div>
+                    <div class="tab-pane fade" id="js">
+<pre style='color:#d1d1d1;background:#000000;'>$<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>#loginForm</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>bootstrapValidator<span style='color:#d2cd86; '>(</span><span style='color:#b060b0; '>{</span>
+  feedbackIcons<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+      valid<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>glyphicon glyphicon-ok</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span>
+      invalid<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>glyphicon glyphicon-remove</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span>
+      validating<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>glyphicon glyphicon-refresh</span><span style='color:#02d045; '>'</span>
+  <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+  fields<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+      name<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+          validators<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                  stringLength<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                      <span style='color:#e66170; font-weight:bold; '>min</span><span style='color:#b060b0; '>:</span> <span style='color:#008c00; '>2</span><span style='color:#d2cd86; '>,</span>
+                      message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>Minimum 2 characters</span><span style='color:#02d045; '>'</span>
+              <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+                  notEmpty<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                      message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>name empty</span><span style='color:#02d045; '>'</span>
+              <span style='color:#b060b0; '>}</span>
+          <span style='color:#b060b0; '>}</span>
+      <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+      email<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+          validators<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+              notEmpty<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                  message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>email empty</span><span style='color:#02d045; '>'</span>
+              <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+              emailAddress<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                  message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>is not a valid email address</span><span style='color:#02d045; '>'</span>
+              <span style='color:#b060b0; '>}</span>
+          <span style='color:#b060b0; '>}</span>
+      <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+      phone<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+          validators<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+              notEmpty<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                  message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>Please supply your phone number</span><span style='color:#02d045; '>'</span>
+              <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+              phone<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                  country<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>US</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span>
+                  message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>Please supply a vaild phone number with area code</span><span style='color:#02d045; '>'</span>
+              <span style='color:#b060b0; '>}</span>
+          <span style='color:#b060b0; '>}</span>
+      <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+      message<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+          validators<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+               stringLength<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                  <span style='color:#e66170; font-weight:bold; '>min</span><span style='color:#b060b0; '>:</span> <span style='color:#008c00; '>3</span><span style='color:#d2cd86; '>,</span>
+                  message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>Minimum 3 characters</span><span style='color:#02d045; '>'</span>
+              <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+              notEmpty<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                  message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>message empty</span><span style='color:#02d045; '>'</span>
+              <span style='color:#b060b0; '>}</span>
+          <span style='color:#b060b0; '>}</span>
+      <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+      
+      <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>underwear[]</span><span style='color:#02d045; '>'</span><span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+           validators<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                  choice<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                      <span style='color:#e66170; font-weight:bold; '>min</span><span style='color:#b060b0; '>:</span> <span style='color:#008c00; '>1</span><span style='color:#d2cd86; '>,</span>
+                      
+                      message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>Please choose 1 !</span><span style='color:#02d045; '>'</span>
+                  <span style='color:#b060b0; '>}</span>
+              <span style='color:#b060b0; '>}</span>
+      <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+      terms<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+          validators<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+              notEmpty<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                  message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>Field is required</span><span style='color:#02d045; '>'</span>
+              <span style='color:#b060b0; '>}</span>
+          <span style='color:#b060b0; '>}</span>
+      <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+      password<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+          validators<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                  stringLength<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                      <span style='color:#e66170; font-weight:bold; '>min</span><span style='color:#b060b0; '>:</span> <span style='color:#008c00; '>6</span><span style='color:#d2cd86; '>,</span>
+                      message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>Minimum 6 characters</span><span style='color:#02d045; '>'</span>
+                  <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+                  notEmpty<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                      message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>The password is required and can</span><span style='color:#008080; '>\'</span><span style='color:#00c4c4; '>t be empty</span><span style='color:#02d045; '>'</span>
+                  <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+                  identical<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                      field<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>password_confirm</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span>
+                      message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>The password and its confirm are not the same</span><span style='color:#02d045; '>'</span>
+                  <span style='color:#b060b0; '>}</span>
+          <span style='color:#b060b0; '>}</span>
+      <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+      password_confirm<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+          validators<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                  stringLength<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                      <span style='color:#e66170; font-weight:bold; '>min</span><span style='color:#b060b0; '>:</span> <span style='color:#008c00; '>6</span><span style='color:#d2cd86; '>,</span>
+                      message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>Minimum 6 characters</span><span style='color:#02d045; '>'</span>
+                  <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+                  notEmpty<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                      message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>The password is required and can</span><span style='color:#008080; '>\'</span><span style='color:#00c4c4; '>t be empty</span><span style='color:#02d045; '>'</span>
+                  <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+                  identical<span style='color:#b060b0; '>:</span> <span style='color:#b060b0; '>{</span>
+                      field<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>password</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span>
+                      message<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>The password and its confirm are not the same</span><span style='color:#02d045; '>'</span>
+                  <span style='color:#b060b0; '>}</span>
+          <span style='color:#b060b0; '>}</span>
+      <span style='color:#b060b0; '>}</span>
+  <span style='color:#b060b0; '>}</span>
+<span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span>
+</pre>
+                    </div>
+                </div>
+                </div><!--/panel-main-content END-->
+              </div><!--/.panel-wrapper-->
+            </div>
+
+            
+
+            <div class="clearfix"></div>
+
+            
+
+            
+            
+
+        </section>
+        <!-- End Content -->
+
+        <!-- Begin Footer -->
+        <footer class="enem footer">
+            <div class="row">
+                <div class="col-lg-12">
+                    &copy; 2016
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </section>
+    <!-- <embed src="media/sounds/test.mp3" autostart="true" loop="true" width="2" height="0"></embed> -->
+    <script type="text/javascript" src="media/js/vendor.min.js"></script>
+    <script type="text/javascript" src="assets/js/modal-animate-css.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrapvalidator.min.js"></script> 
+    
+    <script type="text/javascript">
+        
+
+        $(document).ready(function(){
+            enem.powerEnem();
+            enem.powerWaves();
+            enem.powerEnemScroll();
+            enem.powerNormalNs();
+            enem.powerTooltip();
+            enem.powerResponsive();
+            //enem.powerEditor();
+            //enem.powerSlider(enemSliderBanner);
+
+
+
+            $('#loginForm').bootstrapValidator({
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    name: {
+                        validators: {
+                                stringLength: {
+                                    min: 2,
+                                    message: 'Minimum 2 characters'
+                            },
+                                notEmpty: {
+                                    message: 'name empty'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'email empty'
+                            },
+                            emailAddress: {
+                                message: 'is not a valid email address'
+                            }
+                        }
+                    },
+                    phone: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please supply your phone number'
+                            },
+                            phone: {
+                                country: 'US',
+                                message: 'Please supply a vaild phone number with area code'
+                            }
+                        }
+                    },
+                    message: {
+                        validators: {
+                             stringLength: {
+                                min: 3,
+                                message: 'Minimum 3 characters'
+                            },
+                            notEmpty: {
+                                message: 'message empty'
+                            }
+                        }
+                    },
+                    
+                    'underwear[]': {
+                         validators: {
+                                choice: {
+                                    min: 1,
+                                    
+                                    message: 'Please choose 1 !'
+                                }
+                            }
+                    },
+                    terms: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Field is required'
+                            }
+                        }
+                    },
+                    password: {
+                        validators: {
+                                stringLength: {
+                                    min: 6,
+                                    message: 'Minimum 6 characters'
+                                },
+                                notEmpty: {
+                                    message: 'The password is required and can\'t be empty'
+                                },
+                                identical: {
+                                    field: 'password_confirm',
+                                    message: 'The password and its confirm are not the same'
+                                }
+                        }
+                    },
+                    password_confirm: {
+                        validators: {
+                                stringLength: {
+                                    min: 6,
+                                    message: 'Minimum 6 characters'
+                                },
+                                notEmpty: {
+                                    message: 'The password is required and can\'t be empty'
+                                },
+                                identical: {
+                                    field: 'password',
+                                    message: 'The password and its confirm are not the same'
+                                }
+                        }
+                    }
+                }
+            })
+        });
+
+        $(window).on('resize', function(){
+            enem.powerEnemScroll();
+        });
+    </script>
+
+   
+</body>
+</html>

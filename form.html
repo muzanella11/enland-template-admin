@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <title>Form</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="media/css/app.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-clockpicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/select2-bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+   
+</head>
+<body class="enem page-body scroll">
+    <header>
+        <nav class="enem navbar fixed-top">
+            <!-- Begin Navbar -->
+            <div class="enem navbar navbar-default">
+                <div class="enem navbar navbar-content left">
+                    
+                    <div class="enem burger box-burger">
+                        <button class="enem burger burger-btn btn active" data-enem="powerMenu" data-menu="hidden">
+                            <div class="enem burger icon-burger"></div>
+                        </button>
+                    </div>
+                    <div class="enem logo box-logo">
+                        <a class="enem logo title-logo" href="javascript:;">
+                            Name Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="enem navbar navbar-content right">
+                    <!-- Begin List Content Right Desktop -->
+                    <ul class="enem top-menu nav-right desktop">
+                        <li>
+                            <ul class="enem list-notification">
+                                <li>
+                                    <a class="enem en-search" href="javascript:;" data-enem="powerSearch">
+                                        <i class="enem box-icon-search fa fa-search"></i>
+                                    </a>
+                                </li>
+                                <li class="hidden-md">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-envelope"></i>
+                                        <span class="enem badge badge-notification-top">11</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-md">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-bell"></i>
+                                        <span class="enem badge badge-notification-top">11</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-md">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-tasks"></i>
+                                        <span class="enem badge badge-notification-top">11</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="enem btn btn-account waves" data-enem="powerDropdown" data-dd-id="topAccount">
+                                <img class="enem box-avatar" src="media/img/design_f.png" width="30px" height="30px" /> Alexander Great Rose
+                            </button>
+                            <ul class="enem top-account box-account" data-dd-name="topAccount">
+                                <li>
+                                    <a class="enem waves" href="javascript:;">
+                                        <i class="fa fa-user"></i>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="enem waves" href="javascript:;">
+                                        <i class="fa fa-unlock"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- End List Content Right -->
+
+                    <!-- Begin List Content Right Desktop -->
+                    <ul class="enem top-menu nav-right mobile">
+                        <li>
+                            <a class="enem en-search" href="javascript:;" data-enem="powerSearch">
+                                <i class="enem box-icon-search fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End List Content Right -->
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- End Navbar -->
+
+            <!-- Enem Power Alert -->
+            <div class="enem container-alert power-alert" data-enem-power="powerAlert">
+                <div class="enem alert alert-danger power-alert message-box">
+                    Danger
+                </div>
+            </div>
+            <!-- End Enem Power Alert -->
+
+            <!-- Enem Power Search -->
+            <div class="enem container-search power-search" data-enem-search="powerSearch">
+                <input class="enem power-search box-search" placeholder="S e a r c h" />
+            </div>
+            <!-- End Enem Power Search -->
+        </nav>
+    </header>
+    <aside class="enem aside sidebar left">
+        <div class="enem container-profile-side">
+            <div class="enem container-profile-side avatar" style="background:url('media/img/design_f.png') center center no-repeat; background-size:cover;">
+                <div class="enem container-profile-side box-desc">
+                    <a class="enem box-desc link" href="javascript:;">
+                        <span class="enem box-desc name">
+                            Alexander Great Rose
+                        </span>
+                        <span class="enem box-desc other">
+                            11278393777
+                        </span>
+                        <!-- <a class="enem box-desc see-profile" href="javascript:;">
+                            <i class="fa fa-eye"></i>
+                        </a> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="enem container-notification-side hidden-lg">
+            <ul class="enem notification notification-side">
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="bottom" title="Message" href="javascript:;">
+                        <i class="fa fa-envelope"></i>
+                        <span class="enem badge badge-notification">11</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="bottom" title="Notification" href="javascript:;">
+                        <i class="fa fa-bell"></i>
+                        <span class="enem badge badge-notification">11</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="bottom" title="Tasks" href="javascript:;">
+                        <i class="fa fa-tasks"></i>
+                        <span class="enem badge badge-notification">11</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Begin Nav Sidebar -->
+        <div class="enem container-nav-side">
+            <nav class="enem container-navigation-side scroll">
+                <ul class="enem navigation navigation-side">
+                    <li>
+                        <a class="enem waves" href="dashboard.html">
+                            <i class="enem icon icon-menu fa fa-dashboard"></i> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-book"></i> UI Element
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="alert.html">
+                                    <i class="enem icon icon-menu "></i>Alert
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="badge-label.html">
+                                    <i class="enem icon icon-menu "></i>Badge and Label
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="modal.html">
+                                    <i class="enem icon icon-menu"></i>Modal
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="navbar.html">
+                                    <i class="enem icon icon-menu"></i>Navbar
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="tooltip.html">
+                                    <i class="enem icon icon-menu"></i>Tooltip
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="form.html">
+                                    <i class="enem icon icon-menu"></i>Form
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="table.html">
+                                    <i class="enem icon icon-menu"></i>Table
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-file"></i> Forms
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="form-wizard.html">
+                                    <i class="enem icon icon-menu "></i>Form Wizard
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="form-validation.html">
+                                    <i class="enem icon icon-menu "></i>Form Validation
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-file"></i> Library
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="sortable.html">
+                                    <i class="enem icon icon-menu "></i>Sortable
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="dragable.html">
+                                    <i class="enem icon icon-menu "></i>Dragable
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-file"></i> Sample Pages
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="login-form.html">
+                                    <i class="enem icon icon-menu "></i>Login
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="register.html">
+                                    <i class="enem icon icon-menu "></i>Register
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="error-pages.html">
+                                    <i class="enem icon icon-menu "></i>Error Pages
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="inbox.html">
+                            <i class="enem icon icon-menu fa fa-table"></i> Messages
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- For Sub Menu -->
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-table"></i> Sub Menu
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                                    <i class="enem icon icon-menu fa fa-table"></i> sub 1.1
+                                    <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                                </a>
+
+                                <ul class="enem sub-nav sub-sub-navigation">
+                                    <li>
+                                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                                            <i class="enem icon icon-menu fa fa-table"></i> sub 1.2
+                                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                                        </a>
+
+                                        <ul class="enem sub-nav sub-sub-sub-navigation">
+                                            <li>
+                                                <a class="enem waves" href="javascript:;">
+                                                    <i class="enem icon icon-menu fa fa-table"></i> sub 1.3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="enem waves" href="javascript:;">
+                                                    <i class="enem icon icon-menu fa fa-table"></i> sub 2.3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="enem waves" href="javascript:;">
+                                                    <i class="enem icon icon-menu fa fa-table"></i> sub 3.3
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="enem waves" href="javascript:;">
+                                            <i class="enem icon icon-menu fa fa-table"></i> sub 2.2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="enem waves" href="javascript:;">
+                                            <i class="enem icon icon-menu fa fa-table"></i> sub 3.2
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a class="enem waves" href="javascript:;">
+                                    sub 2.1
+                                </a>
+                            </li>
+                            <li>
+                                <a class="enem waves" href="javascript:;">
+                                    sub 3.1
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Sub Menu -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End Nav Sidebar -->
+
+        <!-- Begin Notification side Bottom -->
+        <div class="enem container-notification-bs">
+            <ul class="enem notification notification-side">
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="top" title="Setting" href="javascript:;">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="top" title="Bookmark" href="javascript:;">
+                        <i class="fa fa-bookmark"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="top" title="Logout" href="javascript:;">
+                        <i class="fa fa-unlock"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Notification side Bottom -->
+
+    </aside>
+    <section class="enem page-container">
+
+        <div class="panel-konten">
+            <div class="row bg-title">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                  <h4 class="page-title">Form</h4>
+                </div>
+                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                  <ul class="breadcrumb">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Form</a></li>
+                    
+                  </ul>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <div class="wrapper-breadcumb-panel">
+                    <a id="minimize-panel-wrapper"><button class="btn btn-outline btn-primary btn-circle-sm"><i class="fa fa-minus"></i></button></a>
+                    <a id="reset-panel-wrapper"><button class="btn btn-outline btn-info btn-circle-sm"><i class="fa fa-refresh"></i></button></a>
+                    <a id="close-panel-wrapper"><button class="btn btn-outline btn-danger btn-circle-sm"><i class="fa fa-close"></i></button></a>
+                    
+                  </div>
+                  <h3>Form Default</h3>
+                  <div class="clearfix"></div>
+                </div>
+
+                <form>
+                  <div class="panel-body">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleSelect1">Example select</label>
+                          <select class="form-control" id="exampleSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleSelect2">Example multiple select</label>
+                          <select multiple="" class="form-control" id="exampleSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleTextarea">Example textarea</label>
+                          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                          <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                        </div>
+                        <fieldset class="form-group">
+                          <legend>Radio buttons</legend>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                              Option one is this and that—be sure to include why it's great
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                              Option two can be something else and selecting it will deselect option one
+                            </label>
+                          </div>
+                          <div class="radio disabled">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                              Option three is disabled
+                            </label>
+                          </div>
+                        </fieldset>
+                        
+                      
+                  </div><!--/.panel-body-->
+
+                  <div class="panel-footer">
+                      <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Check me out
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                  </div><!--/.panel-footer-->
+                </form>
+              </div><!--/.panel-wrapper-->
+            </div>
+
+
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <div class="wrapper-breadcumb-panel">
+                    <a id="minimize-panel-wrapper"><button class="btn btn-outline btn-primary btn-circle-sm"><i class="fa fa-minus"></i></button></a>
+                    <a id="reset-panel-wrapper"><button class="btn btn-outline btn-info btn-circle-sm"><i class="fa fa-refresh"></i></button></a>
+                    <a id="close-panel-wrapper"><button class="btn btn-outline btn-danger btn-circle-sm"><i class="fa fa-close"></i></button></a>
+                    
+                  </div>
+                  <h3>Documentation Form Default</h3>
+                  <div class="clearfix"></div>
+                </div>
+
+                <form>
+                  <div class="panel-body">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleSelect1">Example select</label>
+                          <select class="form-control" id="exampleSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleSelect2">Example multiple select</label>
+                          <select multiple="" class="form-control" id="exampleSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleTextarea">Example textarea</label>
+                          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputFile">File input</label>
+                          <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                          <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                        </div>
+                        <fieldset class="form-group">
+                          <legend>Radio buttons</legend>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                              Option one is this and that—be sure to include why it's great
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                              Option two can be something else and selecting it will deselect option one
+                            </label>
+                          </div>
+                          <div class="radio disabled">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                              Option three is disabled
+                            </label>
+                          </div>
+                        </fieldset>
+                        
+                      
+                  </div><!--/.panel-body-->
+
+                  <div class="panel-footer">
+                      <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Check me out
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                  </div><!--/.panel-footer-->
+                </form>
+              </div><!--/.panel-wrapper-->
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <div class="wrapper-breadcumb-panel">
+                    <a id="minimize-panel-wrapper"><button class="btn btn-outline btn-primary btn-circle-sm"><i class="fa fa-minus"></i></button></a>
+                    <a id="reset-panel-wrapper"><button class="btn btn-outline btn-info btn-circle-sm"><i class="fa fa-refresh"></i></button></a>
+                    <a id="close-panel-wrapper"><button class="btn btn-outline btn-danger btn-circle-sm"><i class="fa fa-close"></i></button></a>
+                    
+                  </div>
+                  <h3>Form Picker</h3>
+                  <div class="clearfix"></div>
+                </div>
+
+                <form>
+                  <div class="panel-body">
+                          <div class="form-group">
+                              <label class="control-label" for="date">Default Datepicker</label>
+                              <div class="input-group" id="exampleData">
+                                  <input class="form-control"  name="date" type="text"/><span class="input-group-addon"><span class="glyphicon-calendar glyphicon"></span></span>
+                              </div>
+                              
+                          </div>
+                          <div class="form-group">
+                          <label class="control-label" for="date-range">Date Range Picker</label>
+                          <div class="input-daterange input-group" id="date-range" >
+                              <input type="text" class="form-control"  name="startDate" />
+                              <span class="input-group-addon bg-info text-white">to</span>
+                              <input type="text" class="form-control" name="endDate" />
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                              <label class="control-label" for="clockPicker">Clock Picker</label>
+                              <div class="input-group clockpicker " data-placement="bottom" data-align="top" data-autoclose="true">
+                                <input class="form-control" id="clockPicker" value="13:14" type="text">
+                                <span class="input-group-addon"> <span class="glyphicon glyphicon-time"></span> </span> 
+                              </div>
+                          </div>
+
+                      
+                  </div>
+                </form>
+              </div><!--/.panel-wrapper-->
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <div class="wrapper-breadcumb-panel">
+                    <a id="minimize-panel-wrapper"><button class="btn btn-outline btn-primary btn-circle-sm"><i class="fa fa-minus"></i></button></a>
+                    <a id="reset-panel-wrapper"><button class="btn btn-outline btn-info btn-circle-sm"><i class="fa fa-refresh"></i></button></a>
+                    <a id="close-panel-wrapper"><button class="btn btn-outline btn-danger btn-circle-sm"><i class="fa fa-close"></i></button></a>
+                    
+                  </div>
+                  <h3>Form with Icon</h3>
+                  <div class="clearfix"></div>
+                </div>
+
+               <form>
+                 <div class="panel-body">
+                      
+                        <div class="form-group">
+                          <label for="exampleInputuname">User Name</label>
+                          <div class="input-group">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
+                            <input class="form-control" id="exampleInputuname" placeholder="Username" type="text">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <div class="input-group">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-inbox"></i></div>
+                            <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputpwd1">Password</label>
+                          <div class="input-group">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></div>
+                            <input class="form-control" id="exampleInputpwd1" placeholder="Enter email" type="password">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputpwd2">Confirm Password</label>
+                          <div class="input-group">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></div>
+                            <input class="form-control" id="exampleInputpwd2" placeholder="Enter email" type="password">
+                          </div>
+                        </div>
+                        
+                      
+                 </div>
+                 <div class="panel-footer">
+                   <button type="submit" class="btn btn-success">Submit</button>
+                   <button type="submit" class="btn btn-danger ">Cancel</button>
+                 </div><!--/.panel-footer--> 
+              </form>
+              </div><!--/.panel-wrapper-->
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <div class="wrapper-breadcumb-panel">
+                    <a id="minimize-panel-wrapper"><button class="btn btn-outline btn-primary btn-circle-sm"><i class="fa fa-minus"></i></button></a>
+                    <a id="reset-panel-wrapper"><button class="btn btn-outline btn-info btn-circle-sm"><i class="fa fa-refresh"></i></button></a>
+                    <a id="close-panel-wrapper"><button class="btn btn-outline btn-danger btn-circle-sm"><i class="fa fa-close"></i></button></a>
+                    
+                  </div>
+                  <h3>Form with Right Icon</h3>
+                  <div class="clearfix"></div>
+                </div>
+                <form>
+                  <div class="panel-body">
+                        <div class="form-group">
+                          <label for="exampleInputuname">User Name</label>
+                          <div class="input-group">
+                            <input class="form-control" id="exampleInputuname" placeholder="Username" type="text">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <div class="input-group">
+                            <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-inbox"></i></div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputpwd1">Password</label>
+                          <div class="input-group">
+                            <input class="form-control" id="exampleInputpwd1" placeholder="Enter pwd" type="password">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputpwd2">Confirm Password</label>
+                          <div class="input-group">
+                            <input class="form-control" id="exampleInputpwd2" placeholder="Enter pwd" type="password">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="panel-footer">
+                  <div class="text-right">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-danger">Cancel</button>
+                  </div>
+                  </div><!--/.panel-footer-->
+                </form>
+              </div><!--/.panel-wrapper-->
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <div class="wrapper-breadcumb-panel">
+                    <a id="minimize-panel-wrapper"><button class="btn btn-outline btn-primary btn-circle-sm"><i class="fa fa-minus"></i></button></a>
+                    <a id="reset-panel-wrapper"><button class="btn btn-outline btn-info btn-circle-sm"><i class="fa fa-refresh"></i></button></a>
+                    <a id="close-panel-wrapper"><button class="btn btn-outline btn-danger btn-circle-sm"><i class="fa fa-close"></i></button></a>
+                    
+                  </div>
+                  <h3>Form Horizontal With Icon</h3>
+                  <div class="clearfix"></div>
+                </div>
+                <form class="form-horizontal">
+                  <div class="panel-body">
+                      <div class="form-group">
+                        <label for="exampleInputuname" class="col-sm-3 control-label">Username*</label>
+                        <div class="col-sm-9">
+                          <div class="input-group">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
+                            <input class="form-control" id="exampleInputuname" placeholder="Username" type="text">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="col-sm-3 control-label">Email*</label>
+                        <div class="col-sm-9">
+                          <div class="input-group">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-inbox"></i></div>
+                            <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                    
+                  </div>
+                  <div class="panel-footer">
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-9">
+                          <button type="submit" class="btn btn-success">Sign in</button>
+                        </div>
+                      </div>
+                  </div><!--/.panel-footer-->
+                </form>
+              </div><!--/.panel-wrapper-->
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <div class="wrapper-breadcumb-panel">
+                    <a id="minimize-panel-wrapper"><button class="btn btn-outline btn-primary btn-circle-sm"><i class="fa fa-minus"></i></button></a>
+                    <a id="reset-panel-wrapper"><button class="btn btn-outline btn-info btn-circle-sm"><i class="fa fa-refresh"></i></button></a>
+                    <a id="close-panel-wrapper"><button class="btn btn-outline btn-danger btn-circle-sm"><i class="fa fa-close"></i></button></a>
+                    
+                  </div>
+                  <h3>Form Horizontal With Right Icon</h3>
+                  <div class="clearfix"></div>
+                </div>
+
+                <form class="form-horizontal">
+                  <div class="panel-body">
+                      <div class="form-group">
+                        <label for="exampleInputuname" class="col-sm-3 control-label">Username*</label>
+                        <div class="col-sm-9">
+                          <div class="input-group">
+                            <input class="form-control" id="exampleInputuname" placeholder="Username" type="text">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="col-sm-3 control-label">Email*</label>
+                        <div class="col-sm-9">
+                          <div class="input-group">
+                            <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                            <div class="input-group-addon"><i class="glyphicon glyphicon-inbox"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                  </div>
+                  <div class="panel-footer">
+                    <div class="form-group">
+                      <div class="col-sm-offset-3 col-sm-9 text-right">
+                        <button type="submit" class="btn btn-success">Sign in</button>
+                      </div>
+                     </div>
+                  </div>
+                </form>
+              </div><!--/.panel-wrapper-->
+            </div>
+            <div class="clearfix"></div>
+
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <h3>Switch with checkbox</h3>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                  <!-- List group -->
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                          Bootstrap Switch Default
+                          <div class="material-switch pull-right">
+                              <input id="someSwitchOptionDefault" name="" type="checkbox"  />
+                              <label for="someSwitchOptionDefault" class="label-default"></label>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          Bootstrap Switch Primary
+                          <div class="material-switch pull-right">
+                              <input id="someSwitchOptionPrimary" name="" type="checkbox" />
+                              <label for="someSwitchOptionPrimary" class="label-primary"></label>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          Bootstrap Switch Success
+                          <div class="material-switch pull-right">
+                              <input id="someSwitchOptionSuccess" name="" type="checkbox"/>
+                              <label for="someSwitchOptionSuccess" class="label-success"></label>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          Bootstrap Switch Info
+                          <div class="material-switch pull-right">
+                              <input id="someSwitchOptionInfo" name="" type="checkbox"/>
+                              <label for="someSwitchOptionInfo" class="label-info"></label>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          Bootstrap Switch Warning
+                          <div class="material-switch pull-right">
+                              <input id="someSwitchOptionWarning" name="" type="checkbox"/>
+                              <label for="someSwitchOptionWarning" class="label-warning"></label>
+                          </div>
+                      </li>
+                      <li class="list-group-item">
+                          Bootstrap Switch Danger
+                          <div class="material-switch pull-right">
+                              <input id="someSwitchOptionDanger" name="" type="checkbox"/>
+                              <label for="someSwitchOptionDanger" class="label-danger"></label>
+                          </div>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="panel panel-wrapper">
+                  <div class="panel-heading">
+                    <h3>Checkbox</h3>
+                  <div class="clearfix"></div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="col-md-4 col-xs-12 col-sm-12">
+                      <div class="checkbox">
+                        <input id="checkbox0" type="checkbox">
+                        <label for="checkbox0"> Default </label>
+                      </div>
+                      <div class="checkbox checkbox-primary">
+                        <input id="checkbox2" type="checkbox" checked>
+                        <label for="checkbox2"> Primary </label>
+                      </div>
+                      <div class="checkbox checkbox-success">
+                        <input id="checkbox3" type="checkbox">
+                        <label for="checkbox3"> Success </label>
+                      </div>
+                      <div class="checkbox checkbox-info">
+                        <input id="checkbox4" type="checkbox">
+                        <label for="checkbox4"> Info </label>
+                      </div>
+                      <div class="checkbox checkbox-warning">
+                        <input id="checkbox5" type="checkbox" checked>
+                        <label for="checkbox5"> Warning </label>
+                      </div>
+                      <div class="checkbox checkbox-danger">
+                        <input id="checkbox6" type="checkbox" checked>
+                        <label for="checkbox6"> Danger </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <div class="checkbox checkbox-circle">
+                        <input id="checkbox7" type="checkbox">
+                        <label for="checkbox7"> Simply Rounded </label>
+                      </div>
+                      <div class="checkbox checkbox-info checkbox-circle">
+                        <input id="checkbox8" type="checkbox" checked>
+                        <label for="checkbox8"> Info </label>
+                      </div>
+                      <div class="checkbox checkbox-primary checkbox-circle">
+                        <input id="checkbox-9" type="checkbox">
+                        <label for="checkbox-9"> Primary </label>
+                      </div>
+                      <div class="checkbox checkbox-success checkbox-circle">
+                        <input id="checkbox-10" type="checkbox" checked>
+                        <label for="checkbox-10"> Success </label>
+                      </div>
+                      <div class="checkbox checkbox-warning checkbox-circle">
+                        <input id="checkbox-11" type="checkbox">
+                        <label for="checkbox-11"> Warning </label>
+                      </div>
+                      <div class="checkbox checkbox-danger checkbox-circle">
+                        <input id="checkbox-12" type="checkbox" checked>
+                        <label for="checkbox-12"> Danger </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <div class="checkbox">
+                        <input id="checkbox9" type="checkbox" disabled>
+                        <label for="checkbox9"> Can't check this </label>
+                      </div>
+                      <div class="checkbox checkbox-warning checkbox-circle">
+                        <input id="checkbox110" type="checkbox" disabled checked>
+                        <label for="checkbox110"> And this </label>
+                      </div>
+                      <div class="checkbox checkbox-info">
+                        <input id="checkbox12" type="checkbox" disabled checked>
+                        <label for="checkbox12"> Can't check this </label>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <h3>Radio</h3>
+                <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                <div class="col-md-4 col-xs-12 col-sm-12">
+                  <div class="radio">
+                    <input type="radio" name="radio" id="radio1" value="option1" checked>
+                    <label for="radio1"> Default </label>
+                  </div>
+                  <div class="radio radio-primary">
+                    <input type="radio" name="radio" id="radio3" value="option3">
+                    <label for="radio3"> Primary </label>
+                  </div>
+                  <div class="radio radio-success">
+                    <input type="radio" name="radio" id="radio4" value="option4">
+                    <label for="radio4"> Success </label>
+                  </div>
+                  <div class="radio radio-info">
+                    <input type="radio" name="radio" id="radio5" value="option5">
+                    <label for="radio5"> Info </label>
+                  </div>
+                  <div class="radio radio-danger">
+                    <input type="radio" name="radio" id="radio6" value="option6">
+                    <label for="radio6"> Danger </label>
+                  </div>
+                  <div class="radio radio-warning">
+                    <input type="radio" name="radio" id="radio7" value="option7">
+                    <label for="radio7"> Warning </label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12 col-sm-12">
+                  <div class="radio">
+                    <input type="radio" name="radio21" id="radio21" value="option1" disabled checked>
+                    <label for="radio21"> Default Disable </label>
+                  </div>
+                  <div class="radio radio-primary">
+                    <input type="radio" name="radio23" disabled id="radio23" value="option3">
+                    <label for="radio23"> Primary Disable </label>
+                  </div>
+                  <div class="radio radio-success">
+                    <input type="radio" name="radio24" disabled id="radio24" value="option4" checked>
+                    <label for="radio24"> Success Disable</label>
+                  </div>
+
+                </div>
+              </div>
+              </div>        
+            </div>
+
+            <div class="clearfix"></div>
+
+            
+            <div class="col-lg-12 col-md-12 col-xs-12">
+               <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <h3>Form Input File</h3>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <p>Single input file</p>
+                    <div class="input-group image-preview">
+                        <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
+                        <span class="input-group-btn">
+                            <!-- image-preview-clear button -->
+                            <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                                <span class="glyphicon glyphicon-remove"></span> Clear
+                            </button>
+                            <!-- image-preview-input -->
+                            <div class="btn btn-default image-preview-input">
+                                <span class="glyphicon glyphicon-folder-open"></span>
+                                <span class="image-preview-input-title">Browse</span>
+                                <input type="file" id="image-preview-inputFile" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/> <!-- rename it -->
+                            </div>
+                        </span>
+                    </div><!-- /input-group image-preview [TO HERE]--> 
+                  </div>
+
+                </div>
+
+                <div class="panel-body">
+                  <div class="col-lg-12 col-md-12 col-xs-12">
+                    <p>Multiple input file</p>
+                    <input id="input-702" name="kartik-input-702[]" type="file" multiple=true class="file-loading">
+                  </div>
+                </div>
+               
+
+               </div>
+            </div>
+
+
+            <div class="col-lg-12 col-md-12 col-xs-12">
+              <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <h3>Select</h3>
+                <div class="clearfix"></div>  
+                </div>
+
+                <div class="panel-body">
+                    <p>Simple Select</p>
+                    <select class="selectpicker" title="Choose one...">
+                      <option value="">Select 1</option>
+                      <option value="">Select 2</option>
+                      <option value="">Select 3</option>
+                    </select>
+                </div>
+
+                <div class="panel-body">
+                    <p>Single Select and Search</p>
+                    <select class="selectpicker2" data-live-search="true" title="Choose one...">
+                      <option value="">Select 1</option>
+                      <option value="">Select 2</option>
+                      <option value="">Select 3</option>
+                    </select>
+                </div>
+
+
+                <div class="panel-body">
+                    <p>Multiple select2</p>
+                    <select class="select2 select2-multiple" multiple="multiple" data-placeholder="Choose">
+                      <optgroup label="Alaskan/Hawaiian Time Zone">
+                      <option value="AK">Alaska</option>
+                      <option value="HI">Hawaii</option>
+                      </optgroup>
+                      <optgroup label="Pacific Time Zone">
+                      <option value="CA">California</option>
+                      <option value="NV">Nevada</option>
+                      <option value="OR">Oregon</option>
+                      <option value="WA">Washington</option>
+                      </optgroup>
+                      <optgroup label="Mountain Time Zone">
+                      <option value="AZ">Arizona</option>
+                      <option value="CO">Colorado</option>
+                      <option value="ID">Idaho</option>
+                      <option value="MT">Montana</option>
+                      <option value="NE">Nebraska</option>
+                      <option value="NM">New Mexico</option>
+                      <option value="ND">North Dakota</option>
+                      <option value="UT">Utah</option>
+                      <option value="WY">Wyoming</option>
+                      </optgroup>
+                      <optgroup label="Central Time Zone">
+                      <option value="AL">Alabama</option>
+                      <option value="AR">Arkansas</option>
+                      <option value="IL">Illinois</option>
+                      <option value="IA">Iowa</option>
+                      <option value="KS">Kansas</option>
+                      <option value="KY">Kentucky</option>
+                      <option value="LA">Louisiana</option>
+                      <option value="MN">Minnesota</option>
+                      <option value="MS">Mississippi</option>
+                      <option value="MO">Missouri</option>
+                      <option value="OK">Oklahoma</option>
+                      <option value="SD">South Dakota</option>
+                      <option value="TX">Texas</option>
+                      <option value="TN">Tennessee</option>
+                      <option value="WI">Wisconsin</option>
+                      </optgroup>
+                      <optgroup label="Eastern Time Zone">
+                      <option value="CT">Connecticut</option>
+                      <option value="DE">Delaware</option>
+                      <option value="FL">Florida</option>
+                      <option value="GA">Georgia</option>
+                      <option value="IN">Indiana</option>
+                      <option value="ME">Maine</option>
+                      <option value="MD">Maryland</option>
+                      <option value="MA">Massachusetts</option>
+                      <option value="MI">Michigan</option>
+                      <option value="NH">New Hampshire</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="NY">New York</option>
+                      <option value="NC">North Carolina</option>
+                      <option value="OH">Ohio</option>
+                      <option value="PA">Pennsylvania</option>
+                      <option value="RI">Rhode Island</option>
+                      <option value="SC">South Carolina</option>
+                      <option value="VT">Vermont</option>
+                      <option value="VA">Virginia</option>
+                      <option value="WV">West Virginia</option>
+                      </optgroup>
+                    </select>
+                </div>
+
+                
+              </div>
+              
+
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-xs-12">
+              <div class="panel panel-wrapper">
+                <div class="panel-heading">
+                  <h3>Multiple Select</h3>
+                <div class="clearfix"></div>
+                </div>
+                <div class="panel-body">
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <p>Default</p>
+                      <select multiple="multiple" class="multi-select" id="my_multi_select1"
+                            name="my_multi_select1[]">
+                        <option>Dallas Cowboys</option>
+                        <option>New York Giants</option>
+                        <option selected>Philadelphia Eagles</option>
+                        <option selected>Washington Redskins</option>
+                        <option>Chicago Bears</option>
+                        <option>Detroit Lions</option>
+                        <option>Green Bay Packers</option>
+                        <option>Minnesota Vikings</option>
+                        <option selected>Atlanta Falcons</option>
+                        <option>Carolina Panthers</option>
+                        <option>New Orleans Saints</option>
+                        <option>Tampa Bay Buccaneers</option>
+                        <option>Arizona Cardinals</option>
+                        <option>St. Louis Rams</option>
+                        <option>San Francisco 49ers</option>
+                        <option>Seattle Seahawks</option>
+                      </select>
+                  </div>
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <P>Grouped Options</P>
+                    <select multiple="multiple" class="multi-select" id="my_multi_select2"
+                            name="my_multi_select2[]">
+                        <optgroup label="NFC EAST">
+                            <option>Dallas Cowboys</option>
+                            <option>New York Giants</option>
+                            <option>Philadelphia Eagles</option>
+                            <option>Washington Redskins</option>
+                        </optgroup>
+                        <optgroup label="NFC NORTH">
+                            <option>Chicago Bears</option>
+                            <option>Detroit Lions</option>
+                            <option>Green Bay Packers</option>
+                            <option>Minnesota Vikings</option>
+                        </optgroup>
+                        <optgroup label="NFC SOUTH">
+                            <option>Atlanta Falcons</option>
+                            <option>Carolina Panthers</option>
+                            <option>New Orleans Saints</option>
+                            <option>Tampa Bay Buccaneers</option>
+                        </optgroup>
+                        <optgroup label="NFC WEST">
+                            <option>Arizona Cardinals</option>
+                            <option>St. Louis Rams</option>
+                            <option>San Francisco 49ers</option>
+                            <option>Seattle Seahawks</option>
+                        </optgroup>
+                    </select>
+                  </div>
+                  <div class="clearfix"></div>
+                  <p></p>
+                  <p></p>
+
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p>Searchable</p>
+                      <select name="country" class="multi-select" multiple="" id="my_multi_select3">
+                        <option value="AF">Afghanistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AQ">Antarctica</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BA">Bosnia and Herzegowina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BV">Bouvet Island</option>
+                        <option value="BR">Brazil</option>
+                        <option value="IO">British Indian Ocean Territory</option>
+                        <option value="BN">Brunei Darussalam</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="CV">Cape Verde</option>
+                        <option value="KY">Cayman Islands</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CX">Christmas Island</option>
+                        <option value="CC">Cocos (Keeling) Islands</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">Congo</option>
+                        <option value="CD">Congo, the Democratic Republic of the</option>
+                        <option value="CK">Cook Islands</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="CI">Cote d'Ivoire</option>
+                        <option value="HR">Croatia (Hrvatska)</option>
+                        <option value="CU">Cuba</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FK">Falkland Islands (Malvinas)</option>
+                        <option value="FO">Faroe Islands</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GF">French Guiana</option>
+                        <option value="PF">French Polynesia</option>
+                        <option value="TF">French Southern Territories</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GR">Greece</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GP">Guadeloupe</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HM">Heard and Mc Donald Islands</option>
+                        <option value="VA">Holy See (Vatican City State)</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IR">Iran (Islamic Republic of)</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="KP">Korea, Democratic People's Republic of</option>
+                        <option value="KR">Korea, Republic of</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Lao People's Democratic Republic</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libyan Arab Jamahiriya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MO">Macau</option>
+                        <option value="MK">Macedonia, The Former Yugoslav Republic of</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MQ">Martinique</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="YT">Mayotte</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">Micronesia, Federated States of</option>
+                        <option value="MD">Moldova, Republic of</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="AN">Netherlands Antilles</option>
+                        <option value="NC">New Caledonia</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NU">Niue</option>
+                        <option value="NF">Norfolk Island</option>
+                        <option value="MP">Northern Mariana Islands</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        
+                    </select>
+                  </div>
+                   
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 text-center">
+               <button class="btn btn-info"><a style="color:#fff;" target="blank_" href="doc-form.html">View Documentation</a></button> 
+            </div>
+        <div class="clearfix"></div>   
+        </div>
+
+        <!-- Begin Footer -->
+        <footer class="enem footer">
+            <div class="row">
+                <div class="col-lg-12">
+                    &copy; 2016
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </section>
+    <!-- <embed src="media/sounds/test.mp3" autostart="true" loop="true" width="2" height="0"></embed> -->
+    <script type="text/javascript" src="media/js/vendor.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-clockpicker.js"></script> 
+    <script type="text/javascript" src="assets/js/canvas-to-blob.min.js"></script> 
+     <script type="text/javascript" src="assets/js/purify.min.js"></script> 
+    <script type="text/javascript" src="assets/js/sortable.min.js"></script> 
+    <script type="text/javascript" src="assets/js/fileinput.min.js"></script> 
+    <script type="text/javascript" src="assets/js/bootstrap-select.js"></script> 
+    <!--select2-->
+    <script type="text/javascript" src="assets/js/custom-select.min.js"></script> 
+
+    <!--multiselect-->
+    <script type="text/javascript" src="assets/js/jquery.multi-select.js"></script> 
+    <script type="text/javascript" src="assets/js/jquery.quicksearch.js"></script> 
+    <script type="text/javascript" src="assets/js/multi-select-init.js"></script> 
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            //Date
+            $('#exampleData input').datepicker({
+                format: "dd/mm/yyyy",
+                 autoclose: true,
+                todayHighlight: true,  
+            
+            });
+
+            $('#date-range').datepicker({
+                toggleActive: true
+            });
+
+           //color picker
+
+            $('.clockpicker').clockpicker({
+                donetext: 'Done',
+                
+            })
+              .find('input').change(function(){
+                console.log(this.value);
+            });
+              
+             $('a#close-panel-wrapper').click(function(){
+                    $(this).parent().parent().parent().addClass('animated rotateOutDownRight');
+                    if( $(this).parent().parent().parent().hasClass('animated rotateOutDownRight') )
+                    {
+                      $(this).removeClass('animated rotateOutDownRight');
+                    }
+                });
+
+            $('a#minimize-panel-wrapper').click(function(){
+
+              $(this).closest('.panel-wrapper').find('form').stop().slideToggle(300);
+              //$('.panel-wrapper').find('form').slideToggle('');
+              if( $(this).find('i.fa').hasClass('fa-minus') )
+              {
+                $(this).find('i.fa').removeClass('fa-minus').addClass('fa-plus')
+              }else{
+                $(this).find('i.fa').addClass('fa-minus');
+              }
+              
+            });
+
+                $('a#reset-panel-wrapper').click(function(){
+                  $(this).closest('.panel-wrapper').find('form')[0].reset();
+                  
+                });   
+
+
+                $(document).on('click', '#close-preview', function(){ 
+                $('.image-preview').popover('hide');
+                // Hover befor close the preview
+                $('.image-preview').hover(
+                    function () {
+                       $('.image-preview').popover('show');
+                    }, 
+                     function () {
+                       $('.image-preview').popover('hide');
+                    }
+                );    
+            });
+
+            $(function() {
+                // // Create the close button
+                // var closebtn = $('<button/>', {
+                //     type:"button",
+                //     text: 'x',
+                //     id: 'close-preview',
+                //     style: 'font-size: initial;',
+                // });
+                // closebtn.attr("class","close pull-right");
+                // // Set the popover default content
+                $('.image-preview').popover({
+                    trigger:'manual',
+                    html:true,
+                    title: "<strong>Preview</strong>",
+                    content: "There's no image",
+                    placement:'bottom'
+                });
+                // Clear event
+                $('.image-preview-clear').click(function(){
+                    $('.image-preview').attr("data-content","").popover('hide');
+                    $('.image-preview-filename').val("");
+                    $('.image-preview-clear').hide();
+                    $('.image-preview-input input:file').val("");
+                    $(".image-preview-input-title").text("Browse"); 
+                }); 
+                // Create the preview image
+                $("input#image-preview-inputFile").on("change",function (){     
+                    var img = $('<img/>', {
+                        id: 'dynamic',
+                        width:250,
+                        height:200
+                    });      
+                    var file = this.files[0];
+                    var reader = new FileReader();
+                    // Set preview image into the popover data-content
+                    reader.onload = function (e) {
+                        $(".image-preview-input-title").text("Change");
+                        $(".image-preview-clear").show();
+                        $(".image-preview-filename").val(file.name);            
+                        img.attr('src', e.target.result);
+                        $(".image-preview")
+                        .attr("data-content",$(img)[0].outerHTML).popover("show");
+                        
+                    }        
+                    reader.readAsDataURL(file);
+                });  
+            });
+
+           $("#input-702").fileinput({
+                uploadUrl: "http://localhost/file-upload-single/1", // server upload action
+                uploadAsync: true,
+                minFileCount: 1,
+                maxFileCount: 5,
+                /*overwriteInitial: false,
+                initialPreview: [
+                    
+                ],
+                initialPreviewAsData: true, // identify if you are sending preview data only and not the raw markup
+                initialPreviewFileType: 'image', // image is the default and can be overridden in config below
+                initialPreviewConfig: [
+                    {caption: "People-1.jpg", size: 576237, width: "120px", url: "/site/file-delete", key: 1},
+                    {caption: "People-2.jpg", size: 932882, width: "120px", url: "/site/file-delete", key: 2}, 
+                ],
+                uploadExtraData: {
+                    img_key: "1000",
+                    img_keywords: "happy, places",
+                }*/
+            });
+
+                 $('.selectpicker').selectpicker({
+                    style: 'btn-default',
+                    size: 5
+                  });
+
+                 $('.selectpicker2').selectpicker({
+                    style: 'btn-default',
+                    size: 5,
+                    liveSearchPlaceholder: "Cari..."
+                  });
+
+                 $(".select2").select2();
+
+            
+        });
+    </script>
+    
+    <script type="text/javascript">
+        
+
+        $(document).ready(function(){
+            enem.powerEnem();
+            enem.powerWaves();
+            enem.powerEnemScroll();
+            enem.powerNormalNs();
+            enem.powerTooltip();
+            enem.powerResponsive();
+            //enem.powerEditor();
+            //enem.powerSlider(enemSliderBanner);
+
+        });//end document ready function
+
+        $(window).on('resize', function(){
+            enem.powerEnemScroll();
+        });
+    </script>
+
+   
+</body>
+</html>

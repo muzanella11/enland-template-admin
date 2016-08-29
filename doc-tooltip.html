@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <title>Tooltip</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="media/css/app.min.css" />
+
+   
+</head>
+<body class="enem page-body scroll">
+    <header>
+        <nav class="enem navbar fixed-top">
+            <!-- Begin Navbar -->
+            <div class="enem navbar navbar-default">
+                <div class="enem navbar navbar-content left">
+                    <div class="enem burger box-burger">
+                        <button class="enem burger burger-btn btn active" data-enem="powerMenu" data-menu="hidden">
+                            <div class="enem burger icon-burger"></div>
+                        </button>
+                    </div>
+                    <div class="enem logo box-logo">
+                        <a class="enem logo title-logo" href="javascript:;">
+                            Name Project
+                        </a>
+                    </div>
+                </div>
+                <div class="enem navbar navbar-content right">
+                    <!-- Begin List Content Right Desktop -->
+                    <ul class="enem top-menu nav-right desktop">
+                        <li>
+                            <ul class="enem list-notification">
+                                <li>
+                                    <a class="enem en-search" href="javascript:;" data-enem="powerSearch">
+                                        <i class="enem box-icon-search fa fa-search"></i>
+                                    </a>
+                                </li>
+                                <li class="hidden-md">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-envelope"></i>
+                                        <span class="enem badge badge-notification-top">11</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-md">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-bell"></i>
+                                        <span class="enem badge badge-notification-top">11</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-md">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-tasks"></i>
+                                        <span class="enem badge badge-notification-top">11</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="enem btn btn-account waves" data-enem="powerDropdown" data-dd-id="topAccount">
+                                <img class="enem box-avatar" src="media/img/design_f.png" width="30px" height="30px" /> Alexander Great Rose
+                            </button>
+                            <ul class="enem top-account box-account" data-dd-name="topAccount">
+                                <li>
+                                    <a class="enem waves" href="javascript:;">
+                                        <i class="fa fa-user"></i>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="enem waves" href="javascript:;">
+                                        <i class="fa fa-unlock"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- End List Content Right -->
+
+                    <!-- Begin List Content Right Desktop -->
+                    <ul class="enem top-menu nav-right mobile">
+                        <li>
+                            <a class="enem en-search" href="javascript:;" data-enem="powerSearch">
+                                <i class="enem box-icon-search fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End List Content Right -->
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- End Navbar -->
+
+            <!-- Enem Power Alert -->
+            <div class="enem container-alert power-alert" data-enem-power="powerAlert">
+                <div class="enem alert alert-danger power-alert message-box">
+                    Danger
+                </div>
+            </div>
+            <!-- End Enem Power Alert -->
+
+            <!-- Enem Power Search -->
+            <div class="enem container-search power-search" data-enem-search="powerSearch">
+                <input class="enem power-search box-search" placeholder="S e a r c h" />
+            </div>
+            <!-- End Enem Power Search -->
+        </nav>
+    </header>
+    <aside class="enem aside sidebar left">
+        <div class="enem container-profile-side">
+            <div class="enem container-profile-side avatar" style="background:url('media/img/design_f.png') center center no-repeat; background-size:cover;">
+                <div class="enem container-profile-side box-desc">
+                    <a class="enem box-desc link" href="javascript:;">
+                        <span class="enem box-desc name">
+                            Alexander Great Rose
+                        </span>
+                        <span class="enem box-desc other">
+                            11278393777
+                        </span>
+                        <!-- <a class="enem box-desc see-profile" href="javascript:;">
+                            <i class="fa fa-eye"></i>
+                        </a> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="enem container-notification-side hidden-lg">
+            <ul class="enem notification notification-side">
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="bottom" title="Message" href="javascript:;">
+                        <i class="fa fa-envelope"></i>
+                        <span class="enem badge badge-notification">11</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="bottom" title="Notification" href="javascript:;">
+                        <i class="fa fa-bell"></i>
+                        <span class="enem badge badge-notification">11</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="bottom" title="Tasks" href="javascript:;">
+                        <i class="fa fa-tasks"></i>
+                        <span class="enem badge badge-notification">11</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Begin Nav Sidebar -->
+        <div class="enem container-nav-side">
+            <nav class="enem container-navigation-side scroll">
+                <ul class="enem navigation navigation-side">
+                    <li>
+                        <a class="enem waves" href="dashboard.html">
+                            <i class="enem icon icon-menu fa fa-dashboard"></i> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-book"></i> UI Element
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="alert.html">
+                                    <i class="enem icon icon-menu "></i>Alert
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="badge-label.html">
+                                    <i class="enem icon icon-menu "></i>Badge and Label
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="modal.html">
+                                    <i class="enem icon icon-menu"></i>Modal
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="navbar.html">
+                                    <i class="enem icon icon-menu"></i>Navbar
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="tooltip.html">
+                                    <i class="enem icon icon-menu"></i>Tooltip
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="form.html">
+                                    <i class="enem icon icon-menu"></i>Form
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="table.html">
+                                    <i class="enem icon icon-menu"></i>Table
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-file"></i> Forms
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="form-wizard.html">
+                                    <i class="enem icon icon-menu "></i>Form Wizard
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="form-validation.html">
+                                    <i class="enem icon icon-menu "></i>Form Validation
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-file"></i> Library
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="sortable.html">
+                                    <i class="enem icon icon-menu "></i>Sortable
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="dragable.html">
+                                    <i class="enem icon icon-menu "></i>Dragable
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-file"></i> Sample Pages
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="" href="login-form.html">
+                                    <i class="enem icon icon-menu "></i>Login
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="register.html">
+                                    <i class="enem icon icon-menu "></i>Register
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="error-pages.html">
+                                    <i class="enem icon icon-menu "></i>Error Pages
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="enem waves" href="inbox.html">
+                            <i class="enem icon icon-menu fa fa-table"></i> Messages
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- For Sub Menu -->
+                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                            <i class="enem icon icon-menu fa fa-table"></i> Sub Menu
+                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                        </a>
+
+                        <ul class="enem sub-nav sub-navigation">
+                            <li>
+                                <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                                    <i class="enem icon icon-menu fa fa-table"></i> sub 1.1
+                                    <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                                </a>
+
+                                <ul class="enem sub-nav sub-sub-navigation">
+                                    <li>
+                                        <a class="enem waves" href="javascript:;" data-enem="powerSubmenu">
+                                            <i class="enem icon icon-menu fa fa-table"></i> sub 1.2
+                                            <i class="enem icon icon-sub-menu side fa fa-angle-right"></i>
+                                        </a>
+
+                                        <ul class="enem sub-nav sub-sub-sub-navigation">
+                                            <li>
+                                                <a class="enem waves" href="javascript:;">
+                                                    <i class="enem icon icon-menu fa fa-table"></i> sub 1.3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="enem waves" href="javascript:;">
+                                                    <i class="enem icon icon-menu fa fa-table"></i> sub 2.3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="enem waves" href="javascript:;">
+                                                    <i class="enem icon icon-menu fa fa-table"></i> sub 3.3
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="enem waves" href="javascript:;">
+                                            <i class="enem icon icon-menu fa fa-table"></i> sub 2.2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="enem waves" href="javascript:;">
+                                            <i class="enem icon icon-menu fa fa-table"></i> sub 3.2
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a class="enem waves" href="javascript:;">
+                                    sub 2.1
+                                </a>
+                            </li>
+                            <li>
+                                <a class="enem waves" href="javascript:;">
+                                    sub 3.1
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Sub Menu -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End Nav Sidebar -->
+
+        <!-- Begin Notification side Bottom -->
+        <div class="enem container-notification-bs">
+            <ul class="enem notification notification-side">
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="top" title="Setting" href="javascript:;">
+                        <i class="fa fa-cog"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="top" title="Bookmark" href="javascript:;">
+                        <i class="fa fa-bookmark"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="enem notification-side" data-toggle="tooltip" data-placement="top" title="Logout" href="javascript:;">
+                        <i class="fa fa-unlock"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Notification side Bottom -->
+
+    </aside>
+    <section class="enem page-container">
+        <section class="enem container-content">
+            <div class="enem row bg-title">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Tooltip</h4>
+                </div>
+                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Tooltip</a></li>
+                    </ul>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="panel panel-wrapper">
+                        <div class="panel-heading">
+                            <h3>Default Tooltip</h3>
+                        <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-body">
+                        <div class="box-content box-content-tooltip">
+                            <button type = "button" class = "btn btn-primary" data-toggle = "tooltip" title = "Tooltip on top Tooltip on top Tooltip on top">
+                               Default
+                            </button>
+                       
+                            <button type = "button" class = "btn btn-primary" data-toggle = "tooltip" 
+                            data-placement = "left" title = "Tooltip on left">
+                            Tooltip on left
+                            </button>
+                        
+                            <button type = "button" class = "btn btn-primary" data-toggle = "tooltip" 
+                               data-placement = "top" title = "Tooltip on top">
+                               Tooltip on top
+                            </button>
+                        
+                            <button type = "button" class = "btn btn-primary" data-toggle = "tooltip" 
+                               data-placement = "bottom" title = "Tooltip on bottom">
+                               Tooltip on bottom
+                            </button>
+
+                            <button type = " button" class = " btn btn-primary" data-toggle = "tooltip" 
+                               data-placement = "right" title = "Tooltip on right">
+                               Tooltip on right
+                            </button>
+                        <p></p>
+                        <pre style='color:#d1d1d1;background:#000000;'><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"btn btn-primary"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on top Tooltip on top Tooltip on top"</span><span style='color:#ff8906; '>></span>
+   Default
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"btn btn-primary"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> 
+data-placement <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"left"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on left"</span><span style='color:#ff8906; '>></span>
+Tooltip on left
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"btn btn-primary"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> 
+   data-placement <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"top"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on top"</span><span style='color:#ff8906; '>></span>
+   Tooltip on top
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"btn btn-primary"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> 
+   data-placement <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"bottom"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on bottom"</span><span style='color:#ff8906; '>></span>
+   Tooltip on bottom
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>" button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>" btn btn-primary"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> 
+   data-placement <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"right"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on right"</span><span style='color:#ff8906; '>></span>
+   Tooltip on right
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+</pre>
+                        </div><!--/.box-content-->
+                        </div><!--/panel-body-->
+                    </div><!--/.panel-wrapper-->
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="panel panel-wrapper">
+                        <div class="panel-heading">
+                            <h3>Tooltip background</h3>
+                        <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="box-content box-content-tooltip">
+                        
+                           
+                       
+                            <button type = "button" class = "btn btn-primary " id="c-tooltipLeft-background" data-toggle = "tooltip" 
+                            data-placement = "left" title = "Tooltip on left" data-background="#F2A654">
+                            Tooltip on left
+                            </button>
+                        
+                            <button type = "button" class = "btn btn-primary " id="c-tooltipTop-background" data-toggle = "tooltip" 
+                               data-placement = "top" title = "Tooltip on top" data-background="#F96868">
+                               Tooltip on top
+                            </button>
+                        
+                            <button type = "button" class = "btn btn-primary" id="c-tooltipBottom-background" data-toggle = "tooltip" 
+                               data-placement = "bottom" title = "Tooltip on bottom" data-background="#46be8a">
+                               Tooltip on bottom
+                            </button>
+
+                            <button type = " button" class = " btn btn-primary" id="c-tooltipRight-background" data-toggle = "tooltip" 
+                               data-placement = "right" title = "Tooltip on right" data-background="#57C7D4">
+                               Tooltip on right
+                            </button>
+                            <p></p>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#html" data-toggle="tab">Html</a></li>
+                                <li><a href="#js" data-toggle="tab">JS</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade active in" id="html">
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"btn btn-primary "</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"c-tooltipLeft-background"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> 
+    data-placement <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"left"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on left"</span> data-background<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#F2A654"</span><span style='color:#ff8906; '>></span>
+    Tooltip on left
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"btn btn-primary "</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"c-tooltipTop-background"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> 
+   data-placement <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"top"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on top"</span> data-background<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#F96868"</span><span style='color:#ff8906; '>></span>
+   Tooltip on top
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"btn btn-primary"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"c-tooltipBottom-background"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> 
+   data-placement <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"bottom"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on bottom"</span> data-background<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#46be8a"</span><span style='color:#ff8906; '>></span>
+   Tooltip on bottom
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>" button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>" btn btn-primary"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"c-tooltipRight-background"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> 
+   data-placement <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"right"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on right"</span> data-background<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"#57C7D4"</span><span style='color:#ff8906; '>></span>
+   Tooltip on right
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+</pre>
+                                </div>
+                                <div class="tab-pane fade" id="js">
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#d2cd86; '>&lt;</span>script<span style='color:#d2cd86; '>></span>
+        $<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span> <span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span> $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>[data-toggle = 'tooltip']</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>tooltip<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span> 
+
+            $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>button#c-tooltipTop-background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hover<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+                <span style='color:#e66170; font-weight:bold; '>var</span> backgroundColor <span style='color:#d2cd86; '>=</span> $<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>attr<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>data-background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+                <span style='color:#9999a9; '>//alert(backgroundColor);</span>
+                $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip-arrow</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>css<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>border-top-color</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span> backgroundColor<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+                $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip-inner</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>css<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span> backgroundColor<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+            <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+
+            $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>button#c-tooltipLeft-background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hover<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+                <span style='color:#e66170; font-weight:bold; '>var</span> backgroundColor2 <span style='color:#d2cd86; '>=</span> $<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>attr<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>data-background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+                <span style='color:#9999a9; '>//alert(backgroundColor);</span>
+                $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip-arrow</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>css<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>border-left-color</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span> backgroundColor2<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+                $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip-inner</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>css<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span> backgroundColor2<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+            <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+
+            $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>button#c-tooltipBottom-background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hover<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+                <span style='color:#e66170; font-weight:bold; '>var</span> backgroundColor2 <span style='color:#d2cd86; '>=</span> $<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>attr<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>data-background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+                <span style='color:#9999a9; '>//alert(backgroundColor);</span>
+                $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip-arrow</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>css<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>border-bottom-color</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span> backgroundColor2<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+                $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip-inner</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>css<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span> backgroundColor2<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+            <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+
+            $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>button#c-tooltipRight-background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hover<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+                <span style='color:#e66170; font-weight:bold; '>var</span> backgroundColor2 <span style='color:#d2cd86; '>=</span> $<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>attr<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>data-background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+                <span style='color:#9999a9; '>//alert(backgroundColor);</span>
+                $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip-arrow</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>css<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>border-right-color</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span> backgroundColor2<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+                $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip-inner</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>css<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>background</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>,</span> backgroundColor2<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+            <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>script<span style='color:#d2cd86; '>></span>
+</pre>
+                                </div>
+                            </div>
+                            </div><!--/.box-content-->
+                        </div><!--.panel-body-->
+                    </div><!--/.panel-wrapper-->
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="panel panel-wrapper">
+                        <div class="panel-heading">
+                            <h3>Tooltip with animate</h3>
+                        <div class="clearfix"></div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="box-content box-content-tooltip">
+                    
+                                <button type = "button" class = "btn btn-primary" data-toggle = "tooltip" title = "Tooltip on top" id="c-tooltipTop-animate" data-animated="animated slideInDown">
+                                   Tooltip on top
+                                </button>
+                           
+                                <button type = "button" class = "btn btn-primary" data-toggle = "tooltip" 
+                                data-placement = "left" title = "Tooltip on left" id="c-tooltipLeft-animate" data-animated="animated slideInLeft">
+                                Tooltip on left
+                                </button>
+                            
+                            
+                                <button type = "button" class = "btn btn-primary" data-toggle = "tooltip" 
+                                   data-placement = "bottom" title = "Tooltip on bottom" id="c-tooltipBottom-animate" data-animated="animated slideInUp">
+                                   Tooltip on bottom
+                                </button>
+
+                            
+                                <button type = " button" class = " btn btn-primary" data-toggle = "tooltip" 
+                                   data-placement = "right" title = "Tooltip on right" id="c-tooltipRight-animate" data-animated="animated slideInRight">
+                                   Tooltip on right
+                                </button>
+                                <p></p>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#html2" data-toggle="tab">Html</a></li>
+                                    <li><a href="#js2" data-toggle="tab">JS</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active in" id="html2">
+<pre style='color:#d1d1d1;background:#000000;'><span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"btn btn-primary"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on top"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"c-tooltipTop-animate"</span> data-animated<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"animated slideInDown"</span><span style='color:#ff8906; '>></span>
+   Tooltip on top
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"btn btn-primary"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> 
+    data-placement <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"left"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on left"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"c-tooltipLeft-animate"</span> data-animated<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"animated slideInLeft"</span><span style='color:#ff8906; '>></span>
+    Tooltip on left
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+
+
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"btn btn-primary"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> 
+   data-placement <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"bottom"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on bottom"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"c-tooltipBottom-animate"</span> data-animated<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"animated slideInUp"</span><span style='color:#ff8906; '>></span>
+   Tooltip on bottom
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+
+
+<span style='color:#ff8906; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>button</span> type <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>" button"</span> class <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>" btn btn-primary"</span> data-toggle <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"tooltip"</span> 
+   data-placement <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"right"</span> title <span style='color:#d2cd86; '>=</span> <span style='color:#00c4c4; '>"Tooltip on right"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"c-tooltipRight-animate"</span> data-animated<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"animated slideInRight"</span><span style='color:#ff8906; '>></span>
+   Tooltip on right
+<span style='color:#ff8906; '>&lt;/</span><span style='color:#e66170; font-weight:bold; '>button</span><span style='color:#ff8906; '>></span>
+</pre>
+                                    </div>
+                                    <div class="tab-pane fade" id="js2">
+<pre style='color:#d1d1d1;background:#000000;'>$<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>button#c-tooltipTop-animate</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hover<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    <span style='color:#e66170; font-weight:bold; '>var</span> animates <span style='color:#d2cd86; '>=</span> $<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>attr<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>data-animated</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+    
+    $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>addClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+
+    <span style='color:#e66170; font-weight:bold; '>if</span><span style='color:#d2cd86; '>(</span> $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hasClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span> <span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span>
+        <span style='color:#e66170; font-weight:bold; '>setTimeout</span><span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+           $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>removeClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+       <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span> <span style='color:#008c00; '>800</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+    <span style='color:#b060b0; '>}</span>
+<span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+
+$<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>button#c-tooltipLeft-animate</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hover<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    <span style='color:#e66170; font-weight:bold; '>var</span> animates <span style='color:#d2cd86; '>=</span> $<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>attr<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>data-animated</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+    
+    $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>addClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+
+    <span style='color:#e66170; font-weight:bold; '>if</span><span style='color:#d2cd86; '>(</span> $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hasClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span> <span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span>
+        <span style='color:#e66170; font-weight:bold; '>setTimeout</span><span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+           $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>removeClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+       <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span> <span style='color:#008c00; '>800</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+    <span style='color:#b060b0; '>}</span>
+<span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+
+$<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>button#c-tooltipBottom-animate</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hover<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    <span style='color:#e66170; font-weight:bold; '>var</span> animates <span style='color:#d2cd86; '>=</span> $<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>attr<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>data-animated</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+    
+    $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>addClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+
+    <span style='color:#e66170; font-weight:bold; '>if</span><span style='color:#d2cd86; '>(</span> $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hasClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span> <span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span>
+        <span style='color:#e66170; font-weight:bold; '>setTimeout</span><span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+           $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>removeClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+       <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span> <span style='color:#008c00; '>800</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+    <span style='color:#b060b0; '>}</span>
+<span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+
+$<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>button#c-tooltipRight-animate</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hover<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+    <span style='color:#e66170; font-weight:bold; '>var</span> animates <span style='color:#d2cd86; '>=</span> $<span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>this</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>attr<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>data-animated</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+    
+    $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>addClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+
+    <span style='color:#e66170; font-weight:bold; '>if</span><span style='color:#d2cd86; '>(</span> $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>hasClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span> <span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span>
+        <span style='color:#e66170; font-weight:bold; '>setTimeout</span><span style='color:#d2cd86; '>(</span><span style='color:#e66170; font-weight:bold; '>function</span><span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span> <span style='color:#b060b0; '>{</span>
+           $<span style='color:#d2cd86; '>(</span><span style='color:#02d045; '>'</span><span style='color:#00c4c4; '>.tooltip</span><span style='color:#02d045; '>'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>removeClass<span style='color:#d2cd86; '>(</span>animates<span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+       <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span> <span style='color:#008c00; '>800</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+    <span style='color:#b060b0; '>}</span>
+<span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+</pre> 
+                                    </div>
+                                </div>
+                            </div><!--/.box-content-->
+                        </div><!--/.panel-body-->
+                    </div><!--/.panel-wrapper-->
+                </div>
+            <div class="clearfix"></div>
+        </section>
+
+        <!-- Begin Footer -->
+        <footer class="enem footer">
+            <div class="row">
+                <div class="col-lg-12">
+                    &copy; 2016
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </section>
+    <!-- <embed src="media/sounds/test.mp3" autostart="true" loop="true" width="2" height="0"></embed> -->
+    <script type="text/javascript" src="media/js/vendor.min.js"></script>
+    <script type="text/javascript" src="assets/js/modal-animate-css.js"></script>
+    <script type="text/javascript">
+        
+
+        $(document).ready(function(){
+            enem.powerEnem();
+            enem.powerWaves();
+            enem.powerEnemScroll();
+            enem.powerNormalNs();
+            enem.powerTooltip();
+            enem.powerResponsive();
+            //enem.powerEditor();
+            //enem.powerSlider(enemSliderBanner);
+
+        });//end document ready function
+
+        $(window).on('resize', function(){
+            enem.powerEnemScroll();
+        });
+    </script>
+
+    <script>
+        $(function () { $("[data-toggle = 'tooltip']").tooltip(); 
+
+            $('button#c-tooltipTop-background').hover(function() {
+                var backgroundColor = $(this).attr('data-background');
+                //alert(backgroundColor);
+                $('.tooltip-arrow').css('border-top-color', backgroundColor);
+                $('.tooltip-inner').css('background', backgroundColor);
+            });
+
+            $('button#c-tooltipLeft-background').hover(function() {
+                var backgroundColor2 = $(this).attr('data-background');
+                //alert(backgroundColor);
+                $('.tooltip-arrow').css('border-left-color', backgroundColor2);
+                $('.tooltip-inner').css('background', backgroundColor2);
+            });
+
+            $('button#c-tooltipBottom-background').hover(function() {
+                var backgroundColor2 = $(this).attr('data-background');
+                //alert(backgroundColor);
+                $('.tooltip-arrow').css('border-bottom-color', backgroundColor2);
+                $('.tooltip-inner').css('background', backgroundColor2);
+            });
+            $('button#c-tooltipRight-background').hover(function() {
+                var backgroundColor2 = $(this).attr('data-background');
+                //alert(backgroundColor);
+                $('.tooltip-arrow').css('border-right-color', backgroundColor2);
+                $('.tooltip-inner').css('background', backgroundColor2);
+            });
+
+            //ANIMATE
+
+            $('button#c-tooltipTop-animate').hover(function() {
+                var animates = $(this).attr('data-animated');
+                
+                $('.tooltip').addClass(animates);
+
+                if( $('.tooltip').hasClass(animates) ){
+                    setTimeout(function() {
+                       $('.tooltip').removeClass(animates);
+                   }, 800);
+                }
+            });
+
+            $('button#c-tooltipLeft-animate').hover(function() {
+                var animates = $(this).attr('data-animated');
+                
+                $('.tooltip').addClass(animates);
+
+                if( $('.tooltip').hasClass(animates) ){
+                    setTimeout(function() {
+                       $('.tooltip').removeClass(animates);
+                   }, 800);
+                }
+            });
+
+            $('button#c-tooltipBottom-animate').hover(function() {
+                var animates = $(this).attr('data-animated');
+                
+                $('.tooltip').addClass(animates);
+
+                if( $('.tooltip').hasClass(animates) ){
+                    setTimeout(function() {
+                       $('.tooltip').removeClass(animates);
+                   }, 800);
+                }
+            });
+
+            $('button#c-tooltipRight-animate').hover(function() {
+                var animates = $(this).attr('data-animated');
+                
+                $('.tooltip').addClass(animates);
+
+                if( $('.tooltip').hasClass(animates) ){
+                    setTimeout(function() {
+                       $('.tooltip').removeClass(animates);
+                   }, 800);
+                }
+            });
+    });
+    </script>
+
+    
+    
+   
+</body>
+</html>

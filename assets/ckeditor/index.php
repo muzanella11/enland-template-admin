@@ -1,0 +1,1 @@
+<?php if (!defined('framedo')) { header("Location: http://www.the-marketeers.com"); die(); } ?>
